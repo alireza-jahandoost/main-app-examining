@@ -33,7 +33,7 @@ const Header = () => {
             <Image
               src={HeaderPic}
               alt="Picture of the header"
-              placeholder="blur" // Optional blur-up while loading
+              placeholder="blur"
             />
           </Col>
         </Row>
