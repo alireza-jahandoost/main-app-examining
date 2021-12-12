@@ -1,7 +1,7 @@
 import { Navbar, Container, Button, Nav } from "react-bootstrap";
 const AppNavbar = () => {
   return (
-    <Navbar bg="white" expand="lg">
+    <Navbar bg="white" expand="lg" fixed="top" className="shadow">
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
