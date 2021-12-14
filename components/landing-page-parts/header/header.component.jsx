@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Container, Button, Row, Col } from "react-bootstrap";
 
-import styles from "../../styles/header.module.css";
-import HeaderPic from "../../public/header.png";
+import styles from "../../../styles/header.module.css";
+import HeaderPic from "../../../public/header.png";
 
 const Header = () => {
   return (

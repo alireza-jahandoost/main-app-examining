@@ -7,7 +7,7 @@ import SwiperCore, {
 } from "swiper";
 import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
-import styles from "../../styles/question-types.module.css";
+import styles from "../../../styles/question-types.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 

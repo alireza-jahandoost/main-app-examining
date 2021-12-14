@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import margin from "../../styles/margin.module.css";
+import margin from "../../../styles/margin.module.css";
 import Swiper from "./swiper.component";
 
 const QuestionTypes = () => {
