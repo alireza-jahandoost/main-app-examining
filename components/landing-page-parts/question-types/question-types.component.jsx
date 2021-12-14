@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import margin from "../../../styles/margin.module.css";
 import Swiper from "./swiper.component";
 import Gap from "../partials/gap.component";
+import { Fade } from "react-awesome-reveal";
 
 const QuestionTypes = () => {
   const items = [
@@ -64,8 +65,12 @@ const QuestionTypes = () => {
       <Container className={`${margin.my8}`}>
         <Gap />
         <Container className={`${margin.my7} text-center`}>
-          <h2 className="display-5 my-4">Supported Question Types</h2>
-          <Swiper items={items} />
+          <Fade triggerOnce direction="up">
+            <h2 className="display-5 my-4">Supported Question Types</h2>
+          </Fade>
+          <Fade direction="up" triggerOnce>
+            <Swiper items={items} />
+          </Fade>
         </Container>
       </Container>
     </div>

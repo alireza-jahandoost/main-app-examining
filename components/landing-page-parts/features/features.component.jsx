@@ -10,6 +10,8 @@ import UnlimitedQuestionsPic from "../../../public/features/unlimited-questions.
 import UnlimitedParticipantsPic from "../../../public/features/unlimited-participants.png";
 import FreePic from "../../../public/features/free.png";
 
+import { Reveal } from "react-awesome-reveal";
+
 const Features = () => {
   return (
     <div>
@@ -18,7 +20,9 @@ const Features = () => {
         <Container className="my-5">
           <Row>
             <Col xs={12} className="my-3">
-              <h2 className="display-5 text-center">Some of our features</h2>
+              <Reveal triggerOnce delay={300}>
+                <h2 className="display-5 text-center">Some of our features</h2>
+              </Reveal>
             </Col>
             <Col xs={12} sm={6} lg={4} className="my-2">
               <Feature

@@ -3,6 +3,7 @@ import { Container, Button, Row, Col } from "react-bootstrap";
 
 import styles from "../../../styles/header.module.css";
 import HeaderPic from "../../../public/header.png";
+import { Fade } from "react-awesome-reveal";
 
 const Header = () => {
   return (
@@ -16,12 +17,16 @@ const Header = () => {
             xs={12}
             lg={6}
           >
-            <h1 className="display-3">
-              Create Exams Easily, Free For Everyone
-            </h1>
+            <Fade triggerOnce left cascade>
+              <h1 className="display-3">
+                Create Exams Easily, Free For Everyone
+              </h1>
+            </Fade>
             <Row>
               <Col className="lead my-4">
-                <Button>Create your first exam</Button>
+                <Fade triggerOnce>
+                  <Button>Create your first exam</Button>
+                </Fade>
               </Col>
             </Row>
           </Col>
@@ -30,11 +35,13 @@ const Header = () => {
             xs={12}
             lg={6}
           >
-            <Image
-              src={HeaderPic}
-              alt="Picture of the header"
-              placeholder="blur"
-            />
+            <Fade triggerOnce>
+              <Image
+                src={HeaderPic}
+                alt="Picture of the header"
+                placeholder="blur"
+              />
+            </Fade>
           </Col>
         </Row>
       </Container>
