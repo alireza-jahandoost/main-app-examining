@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Feature from "./feature.component";
-import styles from "../../styles/features.module.css";
+import margin from "../../styles/margin.module.css";
 
 import PrivacyPic from "../../public/features/privacy.png";
 import TypesOfQuestionsPic from "../../public/features/types-of-questions.png";
@@ -12,7 +12,7 @@ import FreePic from "../../public/features/free.png";
 const Features = () => {
   return (
     <div>
-      <Container className={styles.my6}>
+      <Container className={margin.my6}>
         <Container>
           <Row>
             <Col>
