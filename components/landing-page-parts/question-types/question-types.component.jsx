@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import margin from "../../../styles/margin.module.css";
 import Swiper from "./swiper.component";
+import Gap from "../partials/gap.component";
 
 const QuestionTypes = () => {
   const items = [
@@ -61,20 +62,7 @@ const QuestionTypes = () => {
   return (
     <div>
       <Container className={`${margin.my8}`}>
-        <Container>
-          <Row>
-            <Col>
-              <div className="border-bottom border-3" />
-            </Col>
-          </Row>
-          <Row className="mt-2">
-            <Col xs={2} />
-            <Col xs={8}>
-              <div className="border-bottom border-3" />
-            </Col>
-            <Col xs={2} />
-          </Row>
-        </Container>
+        <Gap />
         <Container className={`${margin.my7} text-center`}>
           <h2 className="display-5 my-4">Supported Question Types</h2>
           <Swiper items={items} />

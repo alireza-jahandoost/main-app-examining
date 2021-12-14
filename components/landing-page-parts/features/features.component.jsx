@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Feature from "./feature.component";
 import margin from "../../../styles/margin.module.css";
+import Gap from "../partials/gap.component";
 
 import PrivacyPic from "../../../public/features/privacy.png";
 import TypesOfQuestionsPic from "../../../public/features/types-of-questions.png";
@@ -12,23 +13,10 @@ import FreePic from "../../../public/features/free.png";
 const Features = () => {
   return (
     <div>
-      <Container className={margin.my6}>
-        <Container>
+      <Container className={margin.my8}>
+        <Gap />
+        <Container className="my-5">
           <Row>
-            <Col>
-              <div className="border-bottom border-3" />
-            </Col>
-          </Row>
-          <Row className="mt-2">
-            <Col xs={2} />
-            <Col xs={8}>
-              <div className="border-bottom border-3" />
-            </Col>
-            <Col xs={2} />
-          </Row>
-        </Container>
-        <Container>
-          <Row className="my-5">
             <Col xs={12} className="my-3">
               <h2 className="display-5 text-center">Some of our features</h2>
             </Col>

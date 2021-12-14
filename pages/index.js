@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/landing-page-parts/header/header.component";
 import Features from "../components/landing-page-parts/features/features.component";
 import QuestionTypes from "../components/landing-page-parts/question-types/question-types.component";
+import FeatureIdea from "../components/landing-page-parts/feature-idea/feature-idea.component";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Features />
       <QuestionTypes />
+      <FeatureIdea />
     </div>
   );
 }
