@@ -28,7 +28,7 @@ const Features = () => {
               <Feature
                 icon={PrivacyPic}
                 title="Privacy"
-                text="Create exams with password and/or with confirmation"
+                text="Create exams with password and confirmation"
               />
             </Col>
             <Col xs={12} sm={6} lg={4} className="my-2">
@@ -41,8 +41,8 @@ const Features = () => {
             <Col xs={12} sm={6} lg={4} className="my-2">
               <Feature
                 icon={AutoCorrectingPic}
-                title="Auto Correcting"
-                text="Correcting questions automatically by system"
+                title="Auto Check"
+                text="Check questions automatically by system"
               />
             </Col>
             <Col xs={12} sm={6} lg={4} className="my-2">
