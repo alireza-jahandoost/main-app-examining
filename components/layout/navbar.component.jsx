@@ -1,28 +1,72 @@
 import { Navbar, Container, Button, Nav } from "react-bootstrap";
+import programRoutes from "../../constants/program-routes.constant";
+import externalRoutes from "../../constants/external-routes.constant";
+import { useRouter } from "next/router";
+import Link from "next/link";
+
 const AppNavbar = () => {
+  const router = useRouter();
+  const isCurrentPath = (expected) => {
+    return router.pathname === expected;
+  };
+
+  const isActive = (expected) => {
+    const output = {};
+    output.active = isCurrentPath(expected);
+    return output;
+  };
+
   return (
     <Navbar bg="white" expand="lg" fixed="top" className="shadow">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Link passHref href={programRoutes.home}>
+          <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto lead">
-            <Nav.Link className="m-2" href="#home">
-              Home
-            </Nav.Link>
-            <Nav.Link className="m-2" href="#link">
-              Help
-            </Nav.Link>
-            <Nav.Link className="m-2" href="#link">
-              About Us
-            </Nav.Link>
-            <Nav.Link className="m-2" href="#link">
-              Contact Us
-            </Nav.Link>
+            <Link passHref href={programRoutes.home}>
+              <Nav.Link
+                role="link"
+                {...isActive(programRoutes.home)}
+                className="m-2"
+              >
+                Home
+              </Nav.Link>
+            </Link>
+            <Link passHref href={programRoutes.help}>
+              <Nav.Link
+                role="link"
+                {...isActive(programRoutes.help)}
+                className="m-2"
+              >
+                Help
+              </Nav.Link>
+            </Link>
+            <Link passHref href={programRoutes.aboutUs}>
+              <Nav.Link
+                role="link"
+                {...isActive(programRoutes.aboutUs)}
+                className="m-2"
+              >
+                About Us
+              </Nav.Link>
+            </Link>
+            <Link passHref href={programRoutes.contactUs}>
+              <Nav.Link
+                role="link"
+                {...isActive(programRoutes.contactUs)}
+                className="m-2"
+              >
+                Contact Us
+              </Nav.Link>
+            </Link>
           </Nav>
-          <Button variant="success" className="ms-auto m-2">
-            Go To App
-          </Button>
+          <Link href={externalRoutes.webApp}>
+            <Button variant="success" className="ms-auto m-2">
+              Go To App
+            </Button>
+          </Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
