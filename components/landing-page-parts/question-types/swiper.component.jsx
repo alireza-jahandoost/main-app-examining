@@ -38,7 +38,7 @@ const SwiperComponent = ({ items }) => {
     >
       {items.map((item) => {
         return (
-          <SwiperSlide className="h-auto">
+          <SwiperSlide key={item.title} className="h-auto">
             <Container className="bg-white p-5 h-100">
               <h3 className="display-6">{item.title}</h3>
               <div
@@ -47,10 +47,10 @@ const SwiperComponent = ({ items }) => {
                 <div className="text-start">
                   {item.options.map((option) => {
                     return (
-                      <p className="lead mt-3">
+                      <p key={option} className="lead mt-3">
                         <span className="text-muted">
                           <FontAwesomeIcon icon={faCheck} />
-                        </span>{" "}
+                        </span>
                         <span>{option}</span>
                       </p>
                     );
