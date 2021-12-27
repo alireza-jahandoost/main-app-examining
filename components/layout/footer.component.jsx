@@ -1,10 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  faTwitter,
-  faTelegram,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { BsTwitter, BsTelegram, BsInstagram, BsLinkedin } from "react-icons/bs";
 import icons from "../../styles/icons.module.css";
 import externalRoutes from "../../constants/external-routes.constant";
 
@@ -29,7 +24,7 @@ const Footer = () => {
                     href={externalRoutes.twitter}
                     className={`rounded-circle p-2 ${icons.twitter}`}
                   >
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <BsTwitter />
                   </a>
                 </div>
                 <div className="mx-3">
@@ -37,7 +32,7 @@ const Footer = () => {
                     href={externalRoutes.instagram}
                     className={`rounded-circle p-2 ${icons.instagram}`}
                   >
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <BsInstagram />
                   </a>
                 </div>
                 <div className="mx-3">
@@ -45,7 +40,7 @@ const Footer = () => {
                     href={externalRoutes.telegram}
                     className={`rounded-circle p-2 ${icons.telegram}`}
                   >
-                    <FontAwesomeIcon icon={faTelegram} />
+                    <BsTelegram />
                   </a>
                 </div>
               </div>

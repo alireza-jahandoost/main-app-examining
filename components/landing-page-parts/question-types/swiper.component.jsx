@@ -8,8 +8,7 @@ import SwiperCore, {
 import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "../../../styles/question-types.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { BsCheck2 } from "react-icons/bs";
 
 const SwiperComponent = ({ items }) => {
   return (
@@ -48,8 +47,8 @@ const SwiperComponent = ({ items }) => {
                   {item.options.map((option) => {
                     return (
                       <p key={option} className="lead mt-3">
-                        <span className="text-muted me-2">
-                          <FontAwesomeIcon icon={faCheck} />
+                        <span className="me-2">
+                          <BsCheck2 />
                         </span>
                         <span>{option}</span>
                       </p>
