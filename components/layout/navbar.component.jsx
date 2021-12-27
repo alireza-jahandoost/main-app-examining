@@ -1,8 +1,10 @@
 import { Navbar, Container, Button, Nav } from "react-bootstrap";
+import Image from "next/image";
 import programRoutes from "../../constants/program-routes.constant";
 import externalRoutes from "../../constants/external-routes.constant";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import BrandIcon from "../../public/favicon.ico";
 
 const AppNavbar = () => {
   const router = useRouter();
@@ -20,7 +22,14 @@ const AppNavbar = () => {
     <Navbar bg="white" expand="lg" fixed="top" className="shadow">
       <Container>
         <Link passHref href={programRoutes.home}>
-          <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand>
+            <Image
+              src={BrandIcon}
+              alt="Exams Galaxy brand icon"
+              height={50}
+              width={50}
+            />
+          </Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
