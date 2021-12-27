@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import icons from "../../styles/icons.module.css";
+import externalRoutes from "../../constants/external-routes.constant";
 
 const Footer = () => {
   return (
@@ -24,13 +25,16 @@ const Footer = () => {
             <Col>
               <div className="d-flex justify-content-center">
                 <div className="mx-3">
-                  <a href="#" className={`rounded-circle p-2 ${icons.twitter}`}>
+                  <a
+                    href={externalRoutes.twitter}
+                    className={`rounded-circle p-2 ${icons.twitter}`}
+                  >
                     <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </div>
                 <div className="mx-3">
                   <a
-                    href="#"
+                    href={externalRoutes.instagram}
                     className={`rounded-circle p-2 ${icons.instagram}`}
                   >
                     <FontAwesomeIcon icon={faInstagram} />
@@ -38,7 +42,7 @@ const Footer = () => {
                 </div>
                 <div className="mx-3">
                   <a
-                    href="#"
+                    href={externalRoutes.telegram}
                     className={`rounded-circle p-2 ${icons.telegram}`}
                   >
                     <FontAwesomeIcon icon={faTelegram} />

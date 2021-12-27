@@ -48,7 +48,7 @@ const SwiperComponent = ({ items }) => {
                   {item.options.map((option) => {
                     return (
                       <p key={option} className="lead mt-3">
-                        <span className="text-muted">
+                        <span className="text-muted me-2">
                           <FontAwesomeIcon icon={faCheck} />
                         </span>
                         <span>{option}</span>

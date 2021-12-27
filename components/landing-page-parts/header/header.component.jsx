@@ -4,6 +4,7 @@ import { Container, Button, Row, Col } from "react-bootstrap";
 import styles from "../../../styles/header.module.css";
 import HeaderPic from "../../../public/header.png";
 import { Fade } from "react-awesome-reveal";
+import externalRoutes from "../../../constants/external-routes.constant";
 
 const Header = () => {
   return (
@@ -25,7 +26,16 @@ const Header = () => {
             <Row>
               <Col className="lead my-4">
                 <Fade triggerOnce>
-                  <Button>Create your first exam</Button>
+                  <a href={externalRoutes.createExam}>
+                    <Button>Create your first exam</Button>
+                  </a>
+                </Fade>
+                <Fade triggerOnce>
+                  <a href={externalRoutes.login}>
+                    <Button className="mt-2" variant="outline-primary">
+                      Login / Register
+                    </Button>
+                  </a>
                 </Fade>
               </Col>
             </Row>
