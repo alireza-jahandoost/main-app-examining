@@ -43,6 +43,14 @@ const Footer = () => {
                     <BsTelegram />
                   </a>
                 </div>
+                <div className="mx-3">
+                  <a
+                    href={externalRoutes.linkedin}
+                    className={`rounded-circle p-2 ${icons.linkedin}`}
+                  >
+                    <BsLinkedin />
+                  </a>
+                </div>
               </div>
             </Col>
           </Row>
