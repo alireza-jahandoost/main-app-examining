@@ -19,10 +19,10 @@ const AppNavbar = () => {
   };
 
   return (
-    <Navbar bg="white" expand="lg" fixed="top" className="shadow">
+    <Navbar bg="white" expand="lg" fixed="top" className="shadow p-0">
       <Container>
         <Link passHref href={programRoutes.home}>
-          <Navbar.Brand>
+          <Navbar.Brand className="m-0 p-1 d-flex">
             <Image
               src={BrandIcon}
               alt="Exams Galaxy brand icon"
