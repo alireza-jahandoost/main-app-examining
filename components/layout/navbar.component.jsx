@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Navbar, Container, Button, Nav } from "react-bootstrap";
 import Image from "next/image";
 import programRoutes from "../../constants/program-routes.constant";
@@ -11,11 +12,21 @@ const AppNavbar = () => {
   const isCurrentPath = (expected) => {
     return router.pathname === expected;
   };
+  const toggleButtonRef = useRef();
 
   const isActive = (expected) => {
     const output = {};
     output.active = isCurrentPath(expected);
     return output;
+  };
+
+  const closeMenu = () => {
+    if (
+      toggleButtonRef.current?.classList &&
+      !Array.from(toggleButtonRef.current?.classList).includes("collapsed")
+    ) {
+      toggleButtonRef.current.click();
+    }
   };
 
   return (
@@ -31,7 +42,7 @@ const AppNavbar = () => {
             />
           </Navbar.Brand>
         </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle ref={toggleButtonRef} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto lead">
             <Link passHref href={programRoutes.home}>
@@ -39,6 +50,7 @@ const AppNavbar = () => {
                 role="link"
                 {...isActive(programRoutes.home)}
                 className="m-2"
+                onClick={closeMenu}
               >
                 Home
               </Nav.Link>
@@ -48,6 +60,7 @@ const AppNavbar = () => {
                 role="link"
                 {...isActive(programRoutes.help)}
                 className="m-2"
+                onClick={closeMenu}
               >
                 Help
               </Nav.Link>
@@ -57,6 +70,7 @@ const AppNavbar = () => {
                 role="link"
                 {...isActive(programRoutes.aboutUs)}
                 className="m-2"
+                onClick={closeMenu}
               >
                 About Us
               </Nav.Link>
@@ -66,13 +80,18 @@ const AppNavbar = () => {
                 role="link"
                 {...isActive(programRoutes.contactUs)}
                 className="m-2"
+                onClick={closeMenu}
               >
                 Contact Us
               </Nav.Link>
             </Link>
           </Nav>
           <Link href={externalRoutes.webApp}>
-            <Button variant="success" className="ms-auto m-2">
+            <Button
+              onClick={closeMenu}
+              variant="success"
+              className="ms-auto m-2"
+            >
               Go To App
             </Button>
           </Link>
