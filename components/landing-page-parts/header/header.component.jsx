@@ -46,11 +46,13 @@ const Header = () => {
             lg={6}
           >
             <Fade triggerOnce>
-              <Image
-                src={HeaderPic}
-                alt="Picture of the header"
-                placeholder="blur"
-              />
+              <div>
+                <Image
+                  src={HeaderPic}
+                  alt="Picture of the header"
+                  placeholder="blur"
+                />
+              </div>
             </Fade>
           </Col>
         </Row>
