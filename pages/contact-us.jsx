@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import sizes from "../styles/sizes.module.css";
@@ -9,6 +10,16 @@ import externalRoutes from "../constants/external-routes.constant";
 const ContactUs = () => {
   return (
     <div className={`${sizes[`min-height-100`]}`}>
+      <Head>
+        <title>Contact Us - Exams Galaxy</title>
+        <meta name="description" content="description" key="desc" />
+        <meta property="og:title" content="Contact Us - Exams Galaxy" />
+        <meta property="og:description" content="description" />
+        <meta
+          property="og:image"
+          content="https://examsgalaxy.com/favicon.ico"
+        />
+      </Head>
       <Container className={`${margin.my8}`}>
         <h1 className="display-2 text-center">Contact Us</h1>
         <Row className={`${margin.my6}`}>
