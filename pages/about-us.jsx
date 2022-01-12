@@ -15,12 +15,22 @@ const AboutUs = () => {
     <div className={`${sizes[`min-height-100`]}`}>
       <Head>
         <title>About Us - Exams Galaxy</title>
-        <meta name="description" content="description" key="desc" />
-        <meta property="og:title" content="About Us - Exams Galaxy" />
-        <meta property="og:description" content="description" />
+        <meta
+          name="description"
+          content="Variety in question design, A safe environment to test and to be tested, ExamsGalaxy changes your view of the examination"
+          key="desc"
+        />
+        <meta
+          property="og:title"
+          content="Design & Take the exam in the best way possible - Exams Galaxy"
+        />
+        <meta
+          property="og:description"
+          content="Variety in question design, A safe environment to test and to be tested, ExamsGalaxy changes your view of the examination"
+        />
         <meta
           property="og:image"
-          content="https://examsgalaxy.com/favicon.ico"
+          content="https://examsgalaxy.com/og-image.png"
         />
       </Head>
       <Container className={`${margin.my8}`}>

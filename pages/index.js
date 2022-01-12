@@ -11,13 +11,23 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Exams Galaxy</title>
-        <meta name="description" content="description" key="desc" />
-        <meta property="og:title" content="Exams Galaxy" />
-        <meta property="og:description" content="description" />
+        <title>Design & Take the exam in the best way possible</title>
+        <meta
+          name="description"
+          content="Variety in question design, A safe environment to test and to be tested, ExamsGalaxy changes your view of the examination"
+          key="desc"
+        />
+        <meta
+          property="og:title"
+          content="Design & Take the exam in the best way possible - Exams Galaxy"
+        />
+        <meta
+          property="og:description"
+          content="Variety in question design, A safe environment to test and to be tested, ExamsGalaxy changes your view of the examination"
+        />
         <meta
           property="og:image"
-          content="https://examsgalaxy.com/favicon.ico"
+          content="https://examsgalaxy.com/og-image.png"
         />
       </Head>
       <Header />
