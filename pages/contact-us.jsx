@@ -36,28 +36,21 @@ const ContactUs = () => {
           <Col xs={12} xl={7}>
             <h2 className="display-4">Get In Touch</h2>
             <div className="mt-4">
-              <a href={externalRoutes.contactInfo.email}>
-                <p className="lead">
-                  <span>
-                    <BsEnvelope />
-                  </span>
-                  <span> {externalRoutes.contactInfo.email} </span>
-                </p>
-              </a>
-              <a href={externalRoutes.contactInfo.telegram}>
+              <p className="lead">
+                <span>
+                  <BsEnvelope />
+                </span>
+                <span> {externalRoutes.contactInfo.email} </span>
+              </p>
+              <a
+                target="_blank"
+                href={externalRoutes.contactInfo.telegram.link}
+              >
                 <p className="lead">
                   <span>
                     <BsTelegram />
                   </span>
-                  <span> {externalRoutes.contactInfo.telegram} </span>
-                </p>
-              </a>
-              <a href={externalRoutes.contactInfo.instagram}>
-                <p className="lead">
-                  <span>
-                    <BsInstagram />
-                  </span>
-                  <span> {externalRoutes.contactInfo.instagram} </span>
+                  <span> {externalRoutes.contactInfo.telegram.label} </span>
                 </p>
               </a>
             </div>
@@ -65,7 +58,7 @@ const ContactUs = () => {
           <Col xs={12} xl={5}>
             <Image
               src={ContactPic}
-              alt="Picture about our ways of communication"
+              alt="our ways of communication"
               placeholder="blur"
             />
           </Col>
