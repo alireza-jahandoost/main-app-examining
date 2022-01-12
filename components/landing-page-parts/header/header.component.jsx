@@ -20,7 +20,7 @@ const Header = () => {
           >
             <Fade triggerOnce left cascade>
               <h1 className="display-3">
-                Create Exams Easily, Free For Everyone
+                Design & Take the exam in the best way possible
               </h1>
             </Fade>
             <Row>
