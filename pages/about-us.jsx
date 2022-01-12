@@ -39,15 +39,35 @@ const AboutUs = () => {
           <Col xs={12} xl={7}>
             <h2 className="display-4">Our Story</h2>
             <p className="lead">
-              elit at imperdiet dui accumsan sit amet nulla facilisi morbi
-              tempus iaculis urna id volutpat lacus laoreet non curabitur
-              gravida arcu ac tortor dignissim convallis aenean et tortor at
-              risus viverra adipiscing at in tellus integer feugiat scelerisque
-              varius morbi enim nunc faucibus a pellentesque sit amet porttitor
-              eget dolor morbi non arcu risus quis varius quam quisque id diam
-              vel quam elementum pulvinar etiam non quam lacus suspendisse
-              faucibus interdum posuere lorem ipsum dolor sit amet consectetur
-              adipiscing elit
+              I had always heard that the spark of the greatest ideas ignites
+              when the limitations surround people, and I read this sentence
+              only as a sentence, and I never thought I could feel it myself.
+            </p>
+
+            <p className="lead">
+              Corona led to the virtualization of the educational space and at
+              first it seemed that the facilities provided would be enough for
+              the time we thought it would be short.
+            </p>
+
+            <p className="lead">
+              But over time, realizing that Corona will not leave us any time
+              soon, We realized that the deficiencies of this implemented
+              infrastructure, in the field of education and exams, are so great
+              that they can be felt by both professors and students.
+            </p>
+
+            <p className="lead">
+              So With the limitations that Corona created for an important part
+              of my life, which was learning and education, the idea of
+              implementing a platform also formed in my mind and I decided to
+              cover those deficiencies with it And then I constantly expanded
+              its capabilities And finally examsgalaxy was created.
+            </p>
+
+            <p className="lead">
+              Of course, examsgalaxy is still new and we are trying to upgrade
+              this platform over time.
             </p>
           </Col>
           <Col xs={12} xl={5}>
@@ -69,15 +89,12 @@ const AboutUs = () => {
           <Col xs={12} xl={7}>
             <h2 className="display-4">How this site can help you?</h2>
             <p className="lead">
-              elit at imperdiet dui accumsan sit amet nulla facilisi morbi
-              tempus iaculis urna id volutpat lacus laoreet non curabitur
-              gravida arcu ac tortor dignissim convallis aenean et tortor at
-              risus viverra adipiscing at in tellus integer feugiat scelerisque
-              varius morbi enim nunc faucibus a pellentesque sit amet porttitor
-              eget dolor morbi non arcu risus quis varius quam quisque id diam
-              vel quam elementum pulvinar etiam non quam lacus suspendisse
-              faucibus interdum posuere lorem ipsum dolor sit amet consectetur
-              adipiscing elit
+              We live in an age where discipline and time are paramount to
+              advancing our goals. examsgalaxy seeks to establish discipline in
+              your deeper learning by providing a platform for designers to
+              model efficient exams within a timely, stable Along with an
+              experimental attitude and in one word , standard to help you avoid
+              wasting time searching for different sources to test yourself
             </p>
           </Col>
         </Row>
@@ -85,15 +102,18 @@ const AboutUs = () => {
           <Col xs={12} xl={7}>
             <h2 className="display-4">Who am I?</h2>
             <p className="lead">
-              elit at imperdiet dui accumsan sit amet nulla facilisi morbi
-              tempus iaculis urna id volutpat lacus laoreet non curabitur
-              gravida arcu ac tortor dignissim convallis aenean et tortor at
-              risus viverra adipiscing at in tellus integer feugiat scelerisque
-              varius morbi enim nunc faucibus a pellentesque sit amet porttitor
-              eget dolor morbi non arcu risus quis varius quam quisque id diam
-              vel quam elementum pulvinar etiam non quam lacus suspendisse
-              faucibus interdum posuere lorem ipsum dolor sit amet consectetur
-              adipiscing elit
+              I am the founder and creator of this site Student of programming
+              engineering Alireza Jahandoost. You can contact me directly via :
+              <br />
+              <a
+                target="_blank"
+                className="text-primary"
+                href="https://www.linkedin.com/in/alireza-jahandoost/"
+              >
+                LinkedIn
+              </a>{" "}
+              <br />
+              or email(alireza.jahandoost@examsgalaxy.com).
             </p>
           </Col>
           <Col xs={12} xl={5}>
@@ -103,50 +123,52 @@ const AboutUs = () => {
           </Col>
         </Row>
         <Row className={`${margin.my6}`}>
-          <Col xs={12} xl={5}>
-            <Image
-              src={SocialMediaPic}
-              alt="Picture about social media"
-              placeholder="blur"
-            />
-          </Col>
-          <Col xs={12} xl={7}>
-            <h2 className="display-4">Follow us on social media</h2>
-            <div className="mt-3">
-              <a href={externalRoutes.telegram}>
-                <p className="lead">
-                  <span>
-                    <BsTelegram className="align-middle me-2" />
-                    Our Telegram channel
-                  </span>
-                </p>
-              </a>
-              <a href={externalRoutes.instagram}>
-                <p className="lead">
-                  <span>
-                    <BsInstagram className="align-middle me-2" />
-                    Our Instagram page
-                  </span>
-                </p>
-              </a>
-              <a href={externalRoutes.linkedin}>
-                <p className="lead">
-                  <span>
-                    <BsLinkedin className="align-middle me-2" />
-                    Our Linkedin page
-                  </span>
-                </p>
-              </a>
-              <a href={externalRoutes.twitter}>
-                <p className="lead">
-                  <span>
-                    <BsTwitter className="align-middle me-2" />
-                    Our Twitter page
-                  </span>
-                </p>
-              </a>
-            </div>
-          </Col>
+          {
+            // <Col xs={12} xl={5}>
+            //   <Image
+            //     src={SocialMediaPic}
+            //     alt="Picture about social media"
+            //     placeholder="blur"
+            //   />
+            // </Col>
+            // <Col xs={12} xl={7}>
+            //   <h2 className="display-4">Follow us on social media</h2>
+            //   <div className="mt-3">
+            //     <a href={externalRoutes.telegram}>
+            //       <p className="lead">
+            //         <span>
+            //           <BsTelegram className="align-middle me-2" />
+            //           Our Telegram channel
+            //         </span>
+            //       </p>
+            //     </a>
+            //     <a href={externalRoutes.instagram}>
+            //       <p className="lead">
+            //         <span>
+            //           <BsInstagram className="align-middle me-2" />
+            //           Our Instagram page
+            //         </span>
+            //       </p>
+            //     </a>
+            //     <a href={externalRoutes.linkedin}>
+            //       <p className="lead">
+            //         <span>
+            //           <BsLinkedin className="align-middle me-2" />
+            //           Our Linkedin page
+            //         </span>
+            //       </p>
+            //     </a>
+            //     <a href={externalRoutes.twitter}>
+            //       <p className="lead">
+            //         <span>
+            //           <BsTwitter className="align-middle me-2" />
+            //           Our Twitter page
+            //         </span>
+            //       </p>
+            //     </a>
+            //   </div>
+            // </Col>
+          }
         </Row>
       </Container>
     </div>
