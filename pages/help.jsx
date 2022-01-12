@@ -29,7 +29,8 @@ const Help = () => {
       </Head>
       <h1 className="text-center display-2">Help</h1>
       <p className="text-center lead">
-        This part of website has not ready yet. We are working on that
+        This part of website has not been ready yet.
+        <br /> We are working on it.
       </p>
 
       <Image
