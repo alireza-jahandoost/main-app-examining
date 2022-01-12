@@ -86,7 +86,7 @@ const AppNavbar = () => {
               </Nav.Link>
             </Link>
           </Nav>
-          <Link href={externalRoutes.webApp}>
+          <Link href={externalRoutes.webApp} passHref>
             <Button
               onClick={closeMenu}
               variant="success"

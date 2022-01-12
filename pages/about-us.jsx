@@ -107,6 +107,7 @@ const AboutUs = () => {
               <br />
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary"
                 href="https://www.linkedin.com/in/alireza-jahandoost/"
               >

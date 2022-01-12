@@ -44,6 +44,7 @@ const ContactUs = () => {
               </p>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={externalRoutes.contactInfo.telegram.link}
               >
                 <p className="lead">

@@ -17,7 +17,7 @@ const FeatureIdea = () => {
             <Col xs={12} md={6}>
               <div className="text-center text-md-start">
                 <h3 className="display-6">Missing a feature?</h3>
-                <Link href={programRoutes.contactUs}>
+                <Link href={programRoutes.contactUs} passHref>
                   <Button className="mt-2 mb-5 my-md-5" variant="primary">
                     Tell us about
                   </Button>
