@@ -62,7 +62,7 @@ const AboutUs = () => {
               of my life, which was learning and education, the idea of
               implementing a platform also formed in my mind, and I decided to
               cover those deficiencies with it And then I constantly expanded
-              its capabilities And finally "examsgalaxy" was created.
+              its capabilities And finally ExamsGalaxy was created.
             </p>
 
             <p className="lead">
@@ -90,8 +90,8 @@ const AboutUs = () => {
             <h2 className="display-4">How can this platform help you?</h2>
             <p className="lead">
               We live in an age where discipline and time are paramount to
-              advancing our goals. "examsgalaxy" seeks to establish discipline
-              in your deeper learning by providing a platform for designers to
+              advancing our goals. ExamsGalaxy seeks to establish discipline in
+              your deeper learning by providing a platform for designers to
               model efficient exams within a timely, stable Along with an
               experimental attitude and in one word, standard to help you avoid
               wasting time searching for different sources to test yourself.
