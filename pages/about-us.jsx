@@ -45,29 +45,29 @@ const AboutUs = () => {
             </p>
 
             <p className="lead">
-              Corona led to the virtualization of the educational space and at
-              first it seemed that the facilities provided would be enough for
+              Corona led to the virtualization of the educational space, and at
+              first, it seemed that the facilities provided would be enough for
               the time we thought it would be short.
             </p>
 
             <p className="lead">
               But over time, realizing that Corona will not leave us any time
               soon, We realized that the deficiencies of this implemented
-              infrastructure, in the field of education and exams, are so great
-              that they can be felt by both professors and students.
+              infrastructure in education and exams are so significant that both
+              professors and students can feel them.
             </p>
 
             <p className="lead">
-              So With the limitations that Corona created for an important part
+              So With the limitations that Corona created for an essential part
               of my life, which was learning and education, the idea of
-              implementing a platform also formed in my mind and I decided to
+              implementing a platform also formed in my mind, and I decided to
               cover those deficiencies with it And then I constantly expanded
-              its capabilities And finally examsgalaxy was created.
+              its capabilities And finally "examsgalaxy" was created.
             </p>
 
             <p className="lead">
-              Of course, examsgalaxy is still new and we are trying to upgrade
-              this platform over time.
+              Of course, It is still new, and we are trying to upgrade this
+              platform over time.
             </p>
           </Col>
           <Col xs={12} xl={5}>
@@ -87,14 +87,14 @@ const AboutUs = () => {
             />
           </Col>
           <Col xs={12} xl={7}>
-            <h2 className="display-4">How this site can help you?</h2>
+            <h2 className="display-4">How can this platform help you?</h2>
             <p className="lead">
               We live in an age where discipline and time are paramount to
-              advancing our goals. examsgalaxy seeks to establish discipline in
-              your deeper learning by providing a platform for designers to
+              advancing our goals. "examsgalaxy" seeks to establish discipline
+              in your deeper learning by providing a platform for designers to
               model efficient exams within a timely, stable Along with an
-              experimental attitude and in one word , standard to help you avoid
-              wasting time searching for different sources to test yourself
+              experimental attitude and in one word, standard to help you avoid
+              wasting time searching for different sources to test yourself.
             </p>
           </Col>
         </Row>
@@ -102,7 +102,7 @@ const AboutUs = () => {
           <Col xs={12} xl={7}>
             <h2 className="display-4">Who am I?</h2>
             <p className="lead">
-              I am the founder and creator of this site Student of programming
+              I am the founder and creator of this platform, Student of software
               engineering Alireza Jahandoost. You can contact me directly via :
               <br />
               <a
